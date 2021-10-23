@@ -3,10 +3,22 @@
 body {
   /* same color as my favorite mushroom! */
   background-color: #92a8d1;
+  align-content: center;
 }
 h1 {
-  color: blue;
+  color: darkblue;
   text-align: center;
+}
+.akimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+h2 {
+  color: darkblue;
+  text-align: center;
+  font-family: 'Times New Roman';
 }
 p {
   color: powderblue;
