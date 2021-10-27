@@ -4,6 +4,9 @@ body {
   /* same color as my favorite mushroom! */
   background-color: #92a8d1;
   align-content: center;
+  align-items: center;
+  margin: auto;
+  text-align: center;  
 }
 h1 {
   color: darkblue;
@@ -47,4 +50,8 @@ a:active {
   color: aqua;
   background-color: transparent;
   text-decoration: underline;
+}
+
+button {
+  color: plum;
 }
