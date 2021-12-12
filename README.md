@@ -1,2 +1,2 @@
 # theamandawang.github.io
-a cool website?
+a really cool website that you should totally check out.
