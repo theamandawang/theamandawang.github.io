@@ -1,21 +1,20 @@
 /* styles.css */
-
 body {
   /* same color as my favorite mushroom! */
   background-color: #92a8d1;
-  align-content: center;
-  align-items: center;
-  margin: auto;
-  text-align: center;  
 }
 h1 {
   color: darkblue;
   text-align: center;
 }
+.flexbox {
+  display:flex;
+  justify-content:center;
+}
 .slideshow-container {
-  /* max-width: 1000px; */
   position: relative;
-  margin: auto;
+  margin-bottom: 10px;
+  text-align: center;
 }
 /* Hide the images by default */
 .mySlides {
@@ -26,26 +25,29 @@ h1 {
 .text {
   color: #f2f2f2;
   font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
   width: 100%;
   text-align: center;
 }
-.akimg {
-  /* display: block; */
-  margin: auto;
-  width: 50%;
-}
-.outfit {
-  margin: auto;
-  width: 25%;
+img {
+  max-width: 600px;
+  max-height: 400px;
 }
 h2 {
   color: darkblue;
   text-align: center;
   font-family: 'Times New Roman';
 }
+.prev, .next {
+  padding: 4px;
+  color: white;
+  background-color: slateblue;
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+/* Position the "next button" to the right */
 p {
   color: powderblue;
   font-family: verdana;

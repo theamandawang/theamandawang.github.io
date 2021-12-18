@@ -1,34 +1,36 @@
 <!DOCTYPE html>
+
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link rel="stylesheet" href="src/styles.css">
-    <title>amanda's website</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" href="src/styles.css">
+  <title>amanda's website</title>
 </head>
 <html>
-    <body>
-        <h1>amanda's (hopefully) pretty site (COMING SOON)!</h1>
-        <h2>hi! i'm amanda. i like to think i'm pretty cool. this is my first website :)!</h2>
-        <div class="slideshow-container">
 
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides">
-              <img class="akimg" src ="src/img/amanda and katherine.jpg" alt= "amanda and katherine!">
-              <div class="text">katherine and me</div>
-            </div>
-          
-            <div class="mySlides">
-              <img class="outfit" src="src/img/outfit.jpg" alt="super cool outfit in boelter">
-              <div class="text">outfit</div>
-            </div>
-          
-            <!-- Next and previous buttons -->
-            <button type="button" onclick="plusSlides(-1)">&lt;</button>
-            <button type="button" onclick="plusSlides(1)">&gt;</button>
-          </div>
-        
-        
-        
-        <p>fun fact for the day: i want to fly a kite</p>
-    </body>
-    <script src="src/js/slides.js"></script>
+<body>
+  <h1>amanda's (hopefully) pretty site (COMING SOON)!</h1>
+  <h2>hi! i'm amanda. i like to think i'm pretty cool. this is my first website :)!</h2>
+  <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides">
+      <img src="src/img/amanda and katherine.jpg" alt="amanda and katherine!">
+      <div class="text">katherine and me</div>
+    </div>
+
+    <div class="mySlides">
+      <img src="src/img/outfit.jpg" alt="super cool outfit in boelter">
+      <div class="text">outfit</div>
+    </div>
+  </div>
+  <!-- Next and previous buttons -->
+  <div class="flexbox">
+    <button class="prev" type="button" onclick="plusSlides(-1)">&lt;</button>
+    <button class="next" type="button" onclick="plusSlides(1)">&gt;</button>
+  </div>
+
+  <p>fun fact for the day: i want to fly a kite</p>
+</body>
+<script src="src/js/slides.js"></script>
+
 </html>

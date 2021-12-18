@@ -1,16 +1,3 @@
-// function sayHi(){
-//     alert('hi');
-// }
-// function sayIt(){
-//     alert('taylor swift >>>');
-// }
-
-// var pathnames = ['src/img/amanda and katherine.jpg', 'hello'];
-// function rotateSlide(count){
-//     count++;
-//     return pathnames[count%pathnames.length];
-// }
-
 var slideIndex = 0;
 showSlides(slideIndex);
 
