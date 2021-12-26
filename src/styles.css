@@ -39,8 +39,8 @@ h2 {
 }
 .arrows {
   color: white;
-  border: none;
-  background-color: slateblue;
+  border: 1px solid;
+  background-color: #6A87C4;
   border-radius: 4px;
   cursor: pointer;
   font-weight: bold;

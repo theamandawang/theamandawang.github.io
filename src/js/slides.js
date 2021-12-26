@@ -20,4 +20,4 @@ function showSlides(n) {
   }
   slideIndex = ((slideIndex % length) + length ) % length;
   slides[slideIndex].style.display = "block";
-} 
+}
