@@ -8,7 +8,8 @@ const Gallery = () => {
 
     useEffect(() => {
         if(sidebarRef.current && topRef.current) {
-            topRef.current.style.marginTop = -1 * topRef.current.clientHeight;
+            let shift = -1 * sidebarRef.current.clientHeight;
+            topRef.current.style.marginTop = `${shift}px`;
             setHeight(sidebarRef.current.clientHeight);
         }
     }, [sidebarRef, topRef]);

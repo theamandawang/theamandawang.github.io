@@ -8,8 +8,10 @@ const Portfolio = () => {
     const topRef = useRef();
     useEffect(() => {
       if(sidebarRef.current && topRef.current) {
-        topRef.current.style.marginTop = -1 * sidebarRef.current.clientHeight;
+        let shift = -1 * sidebarRef.current.clientHeight;
+        topRef.current.style.marginTop = `${shift}px`;
         setHeight(sidebarRef.current.clientHeight);
+        console.log(topRef.current.style.marginTop);
       }
       const script = document.createElement('script');
 
@@ -54,9 +56,6 @@ const Portfolio = () => {
             </div>
           </div>
           <footer>
-            <p>
-              My Links!
-            </p>
             <section style={{display: 'flex', flexDirection: 'row', justifyContent:'space-evenly'}}>
               <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
                   <a href='https://www.github.com/theamandawang' style={{color: '#FFFFFF'}}>
