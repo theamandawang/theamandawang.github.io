@@ -1,0 +1,25 @@
+#sidebar {
+    width: 5vw;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 40vh;
+    z-index: 1;
+    transition: 0.5s;
+}
+.sidebar-link {
+    color: white;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 2vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 7vh;
+    font-size: calc(10px + 1vmin);
+}
+.sidebar-link:hover {
+    color:black;
+    background-color: cornflowerblue;
+    transition: 0.5s;
+}

@@ -1,0 +1,45 @@
+.img-container {
+    margin-top: -22vh;
+    background-image: url(../../img/greeting.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+}
+.portfolio-container {
+    padding: 20vh;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #282c34;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+.header-text {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    opacity: 1;
+    display: inline-block;
+    font-size: calc(12px + 2vmin);
+    color: white;
+    padding: 2px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-right: 5vw;
+    margin-left: 70vw;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+.portfolio-subtext {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: calc(10px + 1.5vmin);
+    color: white;
+}
+.page {
+    background-color: #282c34;
+}
+footer {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    font-size: calc(12px + 2vmin);
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
