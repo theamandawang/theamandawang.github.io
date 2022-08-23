@@ -1,5 +1,6 @@
 import {useEffect, useRef} from 'react';
 import Sidebar from '../Sidebar/Sidebar';
+import Typed from 'react-typed';
 // https://medium.com/@amie.n.foster/flipping-out-how-to-create-a-card-that-flips-with-react-and-css-131dba54fc96
 // will be using above link to create gallery full of flipping cards!
 const Gallery = () => {
@@ -17,7 +18,17 @@ const Gallery = () => {
         <div>
             <Sidebar ref={sidebarRef}/>
             <div ref={topRef} style={{color: '#FFFFFF', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
-                <h1> WORK IN PROGRESS </h1>
+                <h1>
+                    <Typed
+                        strings={[
+                            '🚧Under Construction🚧']}
+                        typeSpeed={100}
+                        backSpeed={100}
+                        backDelay={1400}
+                        showCursor={true}
+                        loop >
+                    </Typed>
+                </h1>
             </div>
         </div>
     );
