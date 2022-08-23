@@ -1,17 +1,14 @@
-import {useEffect, useState, useRef} from 'react';
+import {useEffect, useRef} from 'react';
 import GitHubImage from '../../img/GitHub-Mark-Light-64px.png';
 import Sidebar from '../Sidebar/Sidebar';
 import './Portfolio.css';
 const Portfolio = () => {
-    const [height, setHeight] = useState(0);
     const sidebarRef = useRef();
     const topRef = useRef();
     useEffect(() => {
       if(sidebarRef.current && topRef.current) {
         let shift = -1 * sidebarRef.current.clientHeight;
         topRef.current.style.marginTop = `${shift}px`;
-        setHeight(sidebarRef.current.clientHeight);
-        console.log(topRef.current.style.marginTop);
       }
       const script = document.createElement('script');
 
@@ -39,18 +36,21 @@ const Portfolio = () => {
           <div className='portfolio-container'>
             <div>
               <p>
-                Education
+                Education 📕📗📘
               </p>
+              <hr/>
               <div>
-                <p className='portfolio-subtext'>UCLA</p>
+                <p className='portfolio-subtext'>UCLA / B.S. Computer Engineering</p>
               </div>
             </div>
+            <br/>
             <div>
               <p>
-                Experience
+                Experience 👩🏻‍💻👩🏻‍✈️👩🏻‍🔬
               </p>
+              <hr/>
               <div>
-                <p className='portfolio-subtext'>Meta</p>
+                <p className='portfolio-subtext'>Meta / Intern</p>
               </div>
               
             </div>
@@ -63,8 +63,8 @@ const Portfolio = () => {
                   </a>
               </div>
               <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
+                <a className="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/amandawang22?trk=profile-badge" style={{color: '#FFFFFF'}}>LinkedIn</a>
                 <div className="badge-base LI-profile-badge" data-locale="en_US" data-size='small' data-theme="light" data-type="HORIZONTAL" data-vanity="amandawang22" data-version="v1">
-                  <a className="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/amandawang22?trk=profile-badge" style={{color: '#FFFFFF'}}>LinkedIn</a>
                 </div>    
               </div>
               <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
