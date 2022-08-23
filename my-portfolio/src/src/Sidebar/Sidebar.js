@@ -18,15 +18,15 @@ const Sidebar = forwardRef((props, ref) =>  {
         <div ref={ref} id='sidebar' onMouseEnter={toggleSidebar} onMouseLeave={toggleSidebar}>
             <Link to={'/'} className='sidebar-link'>
                 <HomeIcon className='icon'/>
-                { sidebar ? <p className='label'>Home</p> : null}
+                { sidebar ? <p>Home</p> : null}
             </Link>
             <Link to={'/gallery'} className='sidebar-link'>
                 <CollectionsIcon className='icon'/>
-                { sidebar ? <p className='label'>Gallery</p> : null}
+                { sidebar ? <p>Gallery</p> : null}
             </Link>
             <Link to={'/bucket-list'} className='sidebar-link'>
                 <FormatColorFillIcon className='icon'/>
-                { sidebar ? <p className='label'>Bucket list</p> : null}
+                { sidebar ? <p>Bucket list</p> : null}
             </Link>
         </div>
     );
