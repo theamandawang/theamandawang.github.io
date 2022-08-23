@@ -17,16 +17,16 @@ const Sidebar = forwardRef((props, ref) =>  {
     return (
         <div ref={ref} id='sidebar' onMouseEnter={toggleSidebar} onMouseLeave={toggleSidebar}>
             <Link to={'/'} className='sidebar-link'>
-                <HomeIcon className='icon'/>
-                { sidebar ? <p>Home</p> : null}
+                <HomeIcon/>
+                { sidebar ? 'Home' : ''}
             </Link>
             <Link to={'/gallery'} className='sidebar-link'>
-                <CollectionsIcon className='icon'/>
-                { sidebar ? <p>Gallery</p> : null}
+                <CollectionsIcon/>
+                { sidebar ? 'Gallery' : ''}
             </Link>
             <Link to={'/bucket-list'} className='sidebar-link'>
-                <FormatColorFillIcon className='icon'/>
-                { sidebar ? <p>Bucket list</p> : null}
+                <FormatColorFillIcon/>
+                { sidebar ? 'Bucket list' : ''}
             </Link>
         </div>
     );
