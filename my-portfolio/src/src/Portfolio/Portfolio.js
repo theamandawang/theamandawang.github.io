@@ -1,9 +1,8 @@
-import { maxHeight } from '@mui/system';
 import {useEffect, useState, useRef} from 'react';
 import GitHubImage from '../../img/GitHub-Mark-Light-64px.png';
 import Sidebar from '../Sidebar/Sidebar';
 import './Portfolio.css';
-export default function Portfolio() {
+const Portfolio = () => {
     const [height, setHeight] = useState(0);
     const sidebarRef = useRef();
     const topRef = useRef();
@@ -26,7 +25,7 @@ export default function Portfolio() {
 
     return (
         <div className='page'>
-          <Sidebar forwardRef={sidebarRef}/>
+          <Sidebar ref={sidebarRef}/>
           <header className='img-container' ref={topRef}>
             <p className='header-text'>
               Hey! I'm Amanda Wang.
@@ -77,3 +76,4 @@ export default function Portfolio() {
         </div>
       );
 };
+export default Portfolio;

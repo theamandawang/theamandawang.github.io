@@ -2,8 +2,8 @@ import './Sidebar.css';
 import CollectionsIcon from '@mui/icons-material/Collections';
 import HomeIcon from '@mui/icons-material/Home';
 import {Link} from 'react-router-dom';
-import {useState} from 'react';
-export default function Sidebar () {
+import {useState, forwardRef} from 'react';
+const Sidebar = forwardRef((props, ref) =>  {
     const [sidebar, setSidebar] = useState(false);
     const toggleSidebar = () => {
         if(sidebar){
@@ -14,7 +14,7 @@ export default function Sidebar () {
         setSidebar(!sidebar);
     }
     return (
-        <div id='sidebar' onMouseEnter={toggleSidebar} onMouseLeave={toggleSidebar}>
+        <div ref={ref} id='sidebar' onMouseEnter={toggleSidebar} onMouseLeave={toggleSidebar}>
             <Link to={'/'} className='sidebar-link'>
                 <HomeIcon className='icon'/>
                 { sidebar ? <p className='label'>Home</p> : null}
@@ -25,4 +25,5 @@ export default function Sidebar () {
             </Link>
         </div>
     );
-}
+});
+export default Sidebar;
