@@ -1,6 +1,7 @@
 import './Sidebar.css';
 import CollectionsIcon from '@mui/icons-material/Collections';
 import HomeIcon from '@mui/icons-material/Home';
+import FormatColorFillIcon from '@mui/icons-material/FormatColorFill';
 import {Link} from 'react-router-dom';
 import {useState, forwardRef} from 'react';
 const Sidebar = forwardRef((props, ref) =>  {
@@ -22,6 +23,10 @@ const Sidebar = forwardRef((props, ref) =>  {
             <Link to={'/gallery'} className='sidebar-link'>
                 <CollectionsIcon className='icon'/>
                 { sidebar ? <p className='label'>Gallery</p> : null}
+            </Link>
+            <Link to={'/bucket-list'} className='sidebar-link'>
+                <FormatColorFillIcon className='icon'/>
+                { sidebar ? <p className='label'>Bucket list</p> : null}
             </Link>
         </div>
     );

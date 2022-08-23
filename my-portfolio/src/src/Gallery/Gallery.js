@@ -15,8 +15,8 @@ const Gallery = () => {
     return (
         <div>
             <Sidebar ref={sidebarRef}/>
-            <div ref={topRef}>
-                Hello.
+            <div ref={topRef} style={{color: '#FFFFFF', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
+                <h1> WORK IN PROGRESS </h1>
             </div>
         </div>
     );
