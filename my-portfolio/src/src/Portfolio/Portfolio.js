@@ -15,7 +15,7 @@ const Portfolio = () => {
 
       script.src = 'https://platform.linkedin.com/badges/js/profile.js';
       script.async = true;
-      script.defer =
+      script.defer = true;
       document.body.appendChild(script);
 
       return () => {
@@ -26,7 +26,7 @@ const Portfolio = () => {
     return (
         <div className='page'>
           <Sidebar ref={sidebarRef}/>
-          <header className='img-container' ref={topRef}>
+          <div className='img-container' ref={topRef}>
             <p className='header-text'>
               Hey, I'm Amanda Wang
             </p>
@@ -41,30 +41,30 @@ const Portfolio = () => {
                     loop >
               </Typed>
             </p>
-          </header>
+          </div>
           <div className='portfolio-container'>
             <div>
-              <p>
+              <p className='portfolio-heading'>
                 Education 📕📗📘
               </p>
-              <hr/>
+              <hr className='portfolio-line'/>
               <div>
                 <p className='portfolio-subtext'>UCLA / B.S. Computer Engineering</p>
               </div>
             </div>
             <br/>
             <div>
-              <p>
+              <p className='portfolio-heading'>
                 Experience 👩🏻‍💻👩🏻‍✈️👩🏻‍🔬
               </p>
-              <hr/>
+              <hr className='portfolio-line'/>
               <div>
                 <p className='portfolio-subtext'>Meta / Intern</p>
               </div>
               
             </div>
           </div>
-          <footer>
+          <div className='footer'>
             <section style={{display: 'flex', flexDirection: 'row', justifyContent:'space-evenly'}}>
               <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
                   <a href='https://www.github.com/theamandawang' style={{color: '#FFFFFF'}}>
@@ -80,7 +80,7 @@ const Portfolio = () => {
                   <a href='https://drive.google.com/file/d/137oYN1hQJTMNFEo_Fe309y4K-9mRyzU8/view?usp=sharing' style={{color: '#FFFFFF'}}>Resume</a>
               </div>
             </section>
-          </footer>
+          </div>
         </div>
       );
 };
