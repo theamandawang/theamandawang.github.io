@@ -1,4 +1,5 @@
 import {useEffect, useRef} from 'react';
+import Typed from 'react-typed';
 import GitHubImage from '../../img/GitHub-Mark-Light-64px.png';
 import Sidebar from '../Sidebar/Sidebar';
 import './Portfolio.css';
@@ -27,10 +28,18 @@ const Portfolio = () => {
           <Sidebar ref={sidebarRef}/>
           <header className='img-container' ref={topRef}>
             <p className='header-text'>
-              Hey! I'm Amanda Wang.
+              Hey, I'm Amanda Wang
             </p>
             <p className='header-text'>
-              I'm currently studying computer engineering at UCLA!
+            <Typed
+                strings={[
+                    'I am a student','I am a developer', 'I am an explorer']}
+                    typeSpeed={100}
+                    backSpeed={100}
+                    backDelay={1400}
+                    showCursor={true}
+                    loop >
+              </Typed>
             </p>
           </header>
           <div className='portfolio-container'>
