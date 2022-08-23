@@ -9,7 +9,7 @@
 .sidebar-link {
     color: white;
     text-decoration: none;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.4);
     padding: 2vh;
     display: flex;
     flex-direction: row;
