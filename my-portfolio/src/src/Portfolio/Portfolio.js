@@ -7,9 +7,7 @@ import {EducationData} from './EducationData';
 const Portfolio = () => {
     const sidebarRef = useRef();
     const topRef = useRef();
-    console.log(typeof(EducationData))
     useEffect(() => {
-      console.log(typeof(EducationData))
       if(sidebarRef.current && topRef.current) {
         let shift = -1 * sidebarRef.current.clientHeight;
         topRef.current.style.marginTop = `${shift}px`;
@@ -27,7 +25,7 @@ const Portfolio = () => {
     }, [sidebarRef, topRef]);
 
     return (
-        <div className='page'>
+        <div>
           <Sidebar ref={sidebarRef}/>
           <div className='img-container' ref={topRef}>
             <p className='header-text'>
@@ -57,17 +55,17 @@ const Portfolio = () => {
                   return (
                     <div>
                       <p className='portfolio-subtext'>{element.subtext}</p>
-                      <section style={{marginLeft: '5vh', color: 'white', display: 'flex', flexDirection: 'row', justifyContent: 'space-between', fontSize: '20px'}}>
+                      <section style={{marginLeft: '5vh', color: 'white', display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>
                         <div>
-                        {element.left.map((text) => {
-                          return (
-                            <p>{text}</p>
-                          );
-                        })}
-                      </div>
+                          {element.left.map((text) => {
+                            return (
+                              <p className='portfolio-description'>{text}</p>
+                            );
+                          })}
+                        </div>
                       {element.right.map((text) => {
                         return (
-                          <p>{text}</p>
+                            <p className='portfolio-description right'>{text}</p>
                         );
                       })}
                       </section>
@@ -94,6 +92,9 @@ const Portfolio = () => {
               </p>
               <hr className='portfolio-line'/>
               <div>
+                <p className='portfolio-subtext'>WhatsBruin</p>
+              </div>
+              <div>
                 <p className='portfolio-subtext'>QWERTY</p>
               </div>
               <div>
@@ -102,7 +103,6 @@ const Portfolio = () => {
               <div>
                 <p className='portfolio-subtext'>MHS-Protect</p>
               </div>
-              
             </div>
           </div>
           <div className='footer'>
@@ -111,8 +111,8 @@ const Portfolio = () => {
                   <img src={GitHubImage} alt='github'></img>
                 </a>
             </div>
-            <div className='column-center'>
-              <a className='badge-base__link LI-simple-link' href='https://www.linkedin.com/in/amandawang22?trk=profile-badge' style={{color: '#FFFFFF'}}>LinkedIn</a>
+            <div className='column-center' style={{textAlign: 'center'}}>
+              <a href='https://www.linkedin.com/in/amandawang22?trk=profile-badge' style={{color: '#FFFFFF'}}>LinkedIn</a>
               <div className='badge-base LI-profile-badge' data-locale='en_US' data-size='small' data-theme='light' data-type='HORIZONTAL' data-vanity='amandawang22' data-version='v1'/>    
             </div>
             <div className='column-center'>
