@@ -26,7 +26,7 @@ const Gallery = () => {
                                         <img src={element.image} alt={element.alt} className='image-style'></img>
                                     } 
                                     back={
-                                        <p style={{padding: '20px'}}>{element.text}</p>
+                                        <p className='text'>{element.text}</p>
                                     }
                                 />
                             );

@@ -19,7 +19,7 @@
     height: 8vh !important;
 }
 .icon {
-    font-size: calc(10px + 1vmin);
+    font-size: calc(10px + 1vmin) !important;
 }
 .sidebar-link:hover {
     color:black !important;

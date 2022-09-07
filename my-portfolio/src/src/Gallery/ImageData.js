@@ -4,6 +4,7 @@ import HSImage from '../../img/highschool.jpg';
 import LAHacksImage from '../../img/lahacks.jpeg';
 import PushcarImage from '../../img/pushcar.jpg';
 import ChantImage from '../../img/chanterelle.jpg';
+import PanthImage from '../../img/pantherina.jpg';
 export const ImageData = [
     {
         image: MetaImage,
@@ -34,6 +35,11 @@ export const ImageData = [
     {
         image: PushcarImage,
         alt: 'Pushcar 2022',
-        text: 'My beautiful, albeit stupid cat>'
+        text: 'My beautiful, albeit stupid cat <3'
+    },
+    {
+        image: PanthImage,
+        alt: 'Amanita Pantherina 2022',
+        text: 'Amanita Pantherina found at Poo Poo Point in Bellevue, WA'
     },
 ];
