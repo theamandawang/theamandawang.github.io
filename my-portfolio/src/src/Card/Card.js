@@ -12,7 +12,7 @@ const Card = forwardRef(({front, back}, ref) => {
                 flipDirection='horizontal'
                 cardStyles={{
                     front: {position: 'absolute', width: '28vw', height: '20vw'},
-                    back: {textAlign: 'center', position: 'absolute', backgroundColor: '#393F4C', width: '28vw', height: '20vw', borderRadius: '5px'}
+                    back: {fontSize: `calc()`, display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'absolute', backgroundColor: '#393F4C', width: '28vw', height: '20vw', borderRadius: '5px'}
                 }}
             >
                     {front}

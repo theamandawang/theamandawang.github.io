@@ -4,6 +4,7 @@ import GitHubImage from '../../img/GitHub-Mark-Light-64px.png';
 import Sidebar from '../Sidebar/Sidebar';
 import './Portfolio.css';
 import {EducationData} from './EducationData';
+import {ProjectData} from './ProjectData';
 const Portfolio = () => {
     const sidebarRef = useRef();
     const topRef = useRef();
@@ -25,7 +26,7 @@ const Portfolio = () => {
     }, [sidebarRef, topRef]);
 
     return (
-        <div>
+        <div className='page'>
           <Sidebar ref={sidebarRef}/>
           <div className='img-container' ref={topRef}>
             <p className='header-text'>
@@ -82,6 +83,8 @@ const Portfolio = () => {
               <div>
                 <p className='portfolio-subtext'>Meta / Intern : Summer 2022</p>
                 <p className='portfolio-subtext'>UCLA CJ Kim Micro and Nano Manufacturing Lab / Undergraduate Researcher : Present</p>
+                <p className='portfolio-subtext'>ACM AI Outreach Officer : Present</p>
+
               </div>
               
             </div>
@@ -91,18 +94,27 @@ const Portfolio = () => {
                 Projects! 🖥📖🏞
               </p>
               <hr className='portfolio-line'/>
-              <div>
-                <p className='portfolio-subtext'>WhatsBruin</p>
-              </div>
-              <div>
-                <p className='portfolio-subtext'>QWERTY</p>
-              </div>
-              <div>
-                <p className='portfolio-subtext'>Friend In Need</p>
-              </div>
-              <div>
-                <p className='portfolio-subtext'>MHS-Protect</p>
-              </div>
+              {ProjectData.map((element) => {
+                  return (
+                    <div>
+                      <a style={{color: 'white'}} href={element.link} className='portfolio-subtext'>{element.subtext}</a>
+                      <section style={{marginLeft: '5vh', color: 'white', display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>
+                        <div>
+                          {element.left.map((text) => {
+                            return (
+                              <p className='portfolio-description'>{text}</p>
+                            );
+                          })}
+                        </div>
+                      {element.right.map((text) => {
+                        return (
+                            <p className='portfolio-description right'>{text}</p>
+                        );
+                      })}
+                      </section>
+                    </div>
+                  );
+                })}
             </div>
           </div>
           <div className='footer'>

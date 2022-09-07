@@ -39,9 +39,6 @@ const BucketList = () => {
                     go all the way up half dome!
                 </ul>
                 <ul>
-                    earn a noogler hat
-                </ul>
-                <ul>
                     watch a meteor shower in the desert
                 </ul>
                 <ul>
