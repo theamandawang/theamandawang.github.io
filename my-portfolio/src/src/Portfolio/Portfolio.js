@@ -128,7 +128,7 @@ const Portfolio = () => {
               <div className='badge-base LI-profile-badge' data-locale='en_US' data-size='small' data-theme='light' data-type='HORIZONTAL' data-vanity='amandawang22' data-version='v1'/>    
             </div>
             <div className='column-center'>
-                <a href='https://drive.google.com/file/d/137oYN1hQJTMNFEo_Fe309y4K-9mRyzU8/view?usp=sharing' style={{color: '#FFFFFF'}}>Resume</a>
+                <a href='https://drive.google.com/file/d/1WiyEKFaOWNq8kKoshtTDoUoP1etM2abE/view?usp=sharing' style={{color: '#FFFFFF'}}>Resume</a>
             </div>
           </div>
         </div>
