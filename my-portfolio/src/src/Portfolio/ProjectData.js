@@ -1,5 +1,14 @@
 export const ProjectData = [
     {
+        subtext : 'Briefly',
+        link: 'https://github.com/maxgonick/briefly',
+        left : [
+            'LA Hacks 2023',
+            'Developed a web-app that summarizes state legislation through CoHere AI',
+            ],
+        right : ['Tools: React.js, Next.js']
+    },
+    {
         subtext : 'Enable',
         link: 'https://github.com/theamandawang/Enable',
         left : [

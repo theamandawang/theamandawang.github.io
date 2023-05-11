@@ -40,6 +40,6 @@ export const ImageData = [
     {
         image: PanthImage,
         alt: 'Amanita Pantherina 2022',
-        text: 'Amanita Pantherina found at Poo Poo Point in Bellevue, WA'
+        text: 'Amanita Pantherina found at Poo Poo Point'
     },
 ];

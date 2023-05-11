@@ -81,10 +81,10 @@ const Portfolio = () => {
               </p>
               <hr className='portfolio-line'/>
               <div>
+                <p className='portfolio-subtext'>Stripe / SWE Intern : Winter 2023</p>
                 <p className='portfolio-subtext'>Meta / Intern : Summer 2022</p>
                 <p className='portfolio-subtext'>UCLA CJ Kim Micro and Nano Manufacturing Lab / Undergraduate Researcher : Present</p>
-                <p className='portfolio-subtext'>ACM AI Outreach Officer : Present</p>
-
+                <p className='portfolio-subtext'>ACM AI Outreach Director : Present</p>
               </div>
               
             </div>
