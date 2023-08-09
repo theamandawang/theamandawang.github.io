@@ -4,7 +4,7 @@ export const ProjectData = [
         link: 'https://github.com/maxgonick/briefly',
         left : [
             'LA Hacks 2023',
-            'Developed a web-app that summarizes state legislation through CoHere AI',
+            'Developed a web-app that summarizes state legislation through the power of CoHere AI',
             ],
         right : ['Tools: React.js, Next.js']
     },

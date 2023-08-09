@@ -18,7 +18,7 @@ const BucketList = () => {
             <div ref={topRef} style={{color: '#FFFFFF', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
                 <h2> just my bucket list, in no particular order</h2>
                 <ul>
-                    skydiving!
+                    skydiving! <b>[done]</b>
                 </ul>
                 <ul>
                     ride amtrak across US
@@ -46,9 +46,6 @@ const BucketList = () => {
                 </ul>
                 <ul>
                     see the glaciers in alaska
-                </ul>
-                <ul>
-                    build a massive snow fort
                 </ul>
                 <ul>
                     own not one, not two, but THREE pairs of overalls! (dungarees if you're british)

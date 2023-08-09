@@ -5,6 +5,6 @@ export const EducationData = [
             'Relevant courses:',
             'Data Structures and Algorithms, Software Construction, Discrete Math, Linear Algebra, Operating Systems',
             ],
-        right : ['GPA: 3.97']
+        right : ['GPA: 3.98']
     },
 ];
