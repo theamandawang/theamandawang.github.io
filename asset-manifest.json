@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.f5d7f3a9.css",
-    "main.js": "/static/js/main.2b53dcae.js",
+    "main.css": "/static/css/main.9e1fbff9.css",
+    "main.js": "/static/js/main.979da21c.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/pushcar.jpg": "/static/media/pushcar.ff28689f10760fe12e02.jpg",
     "static/media/pantherina.jpg": "/static/media/pantherina.9e8892af6b354456e5e4.jpg",
     "static/media/chanterelle.jpg": "/static/media/chanterelle.dbfe07c8a83698db48df.jpg",
     "static/media/cow.jpg": "/static/media/cow.0e9bcd55479d46fb96d2.jpg",
-    "static/media/greeting.jpg": "/static/media/greeting.c64e431ba6613e895de8.jpg",
+    "static/media/greeting.jpg": "/static/media/greeting.e0ba9f0ca9db485ec7b4.jpg",
     "static/media/highschool.jpg": "/static/media/highschool.87a850c6d9aa3fff08b1.jpg",
     "static/media/lahacks.jpeg": "/static/media/lahacks.4cf5b43596ea26fb15cd.jpeg",
     "static/media/meta.jpg": "/static/media/meta.885c991f8692dfd3ed15.jpg",
     "index.html": "/index.html",
-    "main.f5d7f3a9.css.map": "/static/css/main.f5d7f3a9.css.map",
-    "main.2b53dcae.js.map": "/static/js/main.2b53dcae.js.map",
+    "main.9e1fbff9.css.map": "/static/css/main.9e1fbff9.css.map",
+    "main.979da21c.js.map": "/static/js/main.979da21c.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f5d7f3a9.css",
-    "static/js/main.2b53dcae.js"
+    "static/css/main.9e1fbff9.css",
+    "static/js/main.979da21c.js"
   ]
 }
