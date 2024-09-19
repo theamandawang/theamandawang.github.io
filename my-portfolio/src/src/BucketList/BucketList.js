@@ -21,9 +21,6 @@ const BucketList = () => {
                     skydiving! <b>[done]</b>
                 </ul>
                 <ul>
-                    ride amtrak across US
-                </ul>
-                <ul>
                     hike in the alps
                 </ul>
                 <ul>
@@ -46,9 +43,6 @@ const BucketList = () => {
                 </ul>
                 <ul>
                     see the glaciers in alaska
-                </ul>
-                <ul>
-                    own not one, not two, but THREE pairs of overalls! (dungarees if you're british)
                 </ul>
                 <ul>
                     drive a punch buggy
