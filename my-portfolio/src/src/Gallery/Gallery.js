@@ -19,9 +19,10 @@ const Gallery = () => {
             <div ref={topRef} style={{color: '#FFFFFF'}}>
                 <div className='card-grid'>
                     {
-                        ImageData.map((element) => {
+                        ImageData.map((element, index) => {
                             return(
                                 <Card
+                                    key={index}
                                     front={
                                         <img src={element.image} alt={element.alt} className='image-style'></img>
                                     } 
